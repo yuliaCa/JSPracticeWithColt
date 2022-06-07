@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tacos Get and Post</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>REST API: Post and Get Requests</h1>
+    <form action="http://localhost:3000/tacos" method="get">
+        <h2>GET Request</h2>
+        <input type="text" name="tacosType">
+        <input type="number" name="tacosNum" id="tacosNum">
+        <button type="submit">Submit</button>
+    </form>
+    <form action="http://localhost:3000/tacos" method="post">
+        <h2>POST Request</h2>
+        <input type="text" name="type">
+        <input type="number" name="number" id="tacosNumPost">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
